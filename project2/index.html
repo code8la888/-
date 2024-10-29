@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-Hants">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>日本觀光指南</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <img class="fixed-image" src="./images/富士山2.jpg" alt="fixed-image" />
+
+    <header>
+      <section class="logo">
+        <img src="./images/undraw_world_re_768g.svg" alt="日本旅遊網Logo" />
+        <h1>日本觀光指南</h1>
+      </section>
+      <nav>
+        <ul>
+          <li>
+            <a href="#"><i class="fa-solid fa-plane"></i> 旅遊指南</a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-right-to-bracket"></i> 會員登入</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-book"></i> 預約行程</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-regular fa-address-book"></i> 聯絡我們</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="background-img">
+        <div class="filter"></div>
+        <h3>
+          享受片刻的悠閒時光，善用特別假期。<br />策劃一場日本之旅，徹底放鬆心情，感受異國文化的魅力。
+        </h3>
+      </section>
+
+      <section class="info-circles">
+        <h3>觀光主題</h3>
+        <div class="circles">
+          <div class="circle">
+            <img src="./images/北海道雪景.jpg" alt="北海道雪景" />
+            <p>北海道雪景，美不勝收</p>
+          </div>
+          <div class="circle">
+            <img src="./images/日本拉麵.jpg" alt="日本壽司" />
+            <p>日本道地拉麵與美食</p>
+          </div>
+          <div class="circle">
+            <img src="./images/富士山.jpg" alt="富士山" />
+            <p>富士山風景與溫泉</p>
+          </div>
+          <div class="circle">
+            <img src="./images/清水寺.jpg" alt="清水寺" />
+            <p>京都清水寺，千年古都</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="empty-container">
+        <h3>今天就開始規劃一趟夢幻之旅<br />找到最適合自己的行程方案！</h3>
+      </section>
+
+      <section class="google-map">
+        <h3>日本地理位置</h3>
+        <p>
+          日本位於東北亞，面臨廣闊的太平洋。東邊是無邊的海洋，西邊隔著日本海、朝鮮海峽和東海與歐亞大陸相鄰，與韓國和中國相對應；南部接鄰菲律賓海，並與台灣、馬里亞納群島相接；北面通過宗谷海峽連接鄂霍次克海，毗鄰庫頁島和千島群島。
+          <br />四季氣候宜人、變化分明，使得日本成為一年四季皆適合旅遊的理想目的地。南方溫暖，越往北越冷，冬季時特別明顯：西北季風帶來豐富的降雪，使日本海沿岸成為冬季滑雪勝地；而太平洋一側則常見乾燥的「冬晴」天氣，陽光明媚，非常適合戶外活動。可以在地圖上查看不同地區的特色，選擇適合自己的旅遊體驗！」
+        </p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5300755.760441594!2d137.10323600911116!3d35.18148688884259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34674e0fd77f192f%3A0xf54275d47c665244!2sJapan!5e0!3m2!1sen!2sus!4v1664253921541!5m2!1sen!2sus"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+    </main>
+
+    <footer>
+      <section class="logo">
+        <img src="./images/undraw_world_re_768g.svg" alt="logo" />
+        <h3>日本觀光指南</h3>
+      </section>
+      <section class="links">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </section>
+    </footer>
+
+    <script>
+      setInterval(() => {
+        let topBackground = document.querySelector("section.background-img");
+        if (
+          topBackground.style.backgroundImage == 'url("./images/日本櫻花.jpg")'
+        ) {
+          topBackground.style.backgroundImage = 'url("./images/京都古城.jpg")';
+        } else if (
+          topBackground.style.backgroundImage == 'url("./images/京都古城.jpg")'
+        ) {
+          topBackground.style.backgroundImage = 'url("./images/大阪街頭.jpg")';
+        } else {
+          topBackground.style.backgroundImage = 'url("./images/日本櫻花.jpg")';
+        }
+      }, 3000);
+    </script>
+  </body>
+</html>
